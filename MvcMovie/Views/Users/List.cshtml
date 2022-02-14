@@ -1,0 +1,16 @@
+﻿@{
+	ViewData["Title"] = "Brukere";
+}
+
+<h2>Brukere</h2>
+
+<table>
+@foreach (var person in (ViewData["Users"] as List<Person>)!)
+	{
+		<tr>
+			<td>Id: @person.Id</td>
+			<td>Navn: @person.Name</td>
+			<td>Alder: @person.Age</td>
+		</tr>
+	}
+</table>
