@@ -13,7 +13,7 @@ namespace MvcMovie.Controllers
             return View();
         }
 
-        public async Task<IActionResult> List(string name, int numTimes = 1)
+        public async Task<IActionResult> List()
         {
             SqlReader reader =
                 new SqlReader(
